@@ -31,6 +31,6 @@ class ApartmentsController < ApplicationController
 
     # Handle strong parameters, so we are secure
     def apartment_params
-      params.require(:apartment).permit(:street1, :street2, :city, :state, :postal_code, :country, :manager_name, :phone_number, :contact_hours)
+      params.require(:apartment).permit(:user_id, :street1, :street2, :city, :state, :postal_code, :country, :manager_name, :phone_number, :contact_hours)
     end
 end
